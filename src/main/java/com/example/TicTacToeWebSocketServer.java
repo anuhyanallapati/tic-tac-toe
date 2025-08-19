@@ -368,12 +368,6 @@ public class TicTacToeWebSocketServer extends WebSocketServer {
         createGamesFromQueue();
     }
 
-    @Override
-    public void onWebsocketPing(WebSocket conn, Framedata f) {
-        conn.sendFrame(new PingFrame());
-    }
-
-
     // called when a WebSocket connection is closed
     @Override
     public void onClose(WebSocket conn, int code, String reason, boolean remote) {
