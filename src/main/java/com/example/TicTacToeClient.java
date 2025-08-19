@@ -316,7 +316,7 @@ public class TicTacToeClient extends WebSocketClient {
 
     public static void main(String[] args) {
         try {
-            URI serverURI = new URI("ws://localhost:8080");
+            URI serverURI = new URI("wss://tic-tac-toe-0lam.onrender.com");
             // creates client object
             TicTacToeClient client = new TicTacToeClient(serverURI);
 
