@@ -13,7 +13,7 @@ import java.util.*;
 public class TicTacToeWebSocketServer extends WebSocketServer {
     // change 1
 //    private static final int PORT = 8080;
-    private static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
+    private static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "10000"));
 
     private final Gson gson = new Gson();
 
