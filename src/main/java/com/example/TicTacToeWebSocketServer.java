@@ -401,6 +401,7 @@ public class TicTacToeWebSocketServer extends WebSocketServer {
     // called when a message arrives from the client
     @Override
     public void onMessage(WebSocket conn, String message) {
+        System.out.println("Received message: " + message);
         try {
             JsonObject json = JsonParser.parseString(message).getAsJsonObject();
             String action = json.get("action").getAsString();
